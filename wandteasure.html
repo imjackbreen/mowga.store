@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cat Toy Wand Teaser</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            margin-top: 76px;
+            background-color: #f8f4ff;
+        }
+        .product-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+        }
+        .product-image {
+            flex: 1;
+            max-width: 600px;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product-title {
+            color: #4a154b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.8em;
+            color: #2c1810;
+            margin: 20px 0;
+        }
+        .description {
+            line-height: 1.6;
+            color: #333;
+        }
+        .buy-button {
+            background-color: #7b2cbf;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #5a189a;
+        }
+        .features {
+            margin-top: 30px;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Add these media queries for mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+                margin-top: 56px;
+            }
+            
+            .product-container {
+                flex-direction: column;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .product-image {
+                max-width: 100%;
+            }
+
+            .product-title {
+                font-size: 2em;
+            }
+
+            .price {
+                font-size: 1.5em;
+            }
+
+            .buy-button {
+                width: 100%;
+                padding: 12px 20px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .quality-section .display-4 {
+                font-size: 2rem;
+            }
+
+            .quality-section .lead {
+                font-size: 1rem;
+            }
+
+            .feature-list li {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> Mowga</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="privacy.html">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms.html">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://i.etsystatic.com/53615073/r/il/d93354/6463825053/il_794xN.6463825053_8wo8.jpg" alt="Interactive Cat Toy Wand Teaser" />
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Interactive Cat Toy Wand Teaser</h1>
+            <p class="price">$12.99</p>
+            <div class="description">
+                <p>Keep your feline friend entertained for hours with our Interactive Cat Toy Wand Teaser! This engaging toy combines colorful feathers, bells, and ribbons with a durable wand handle, perfect for interactive play sessions that will bring out your cat's natural hunting instincts.</p>
+            </div>
+            <div class="features">
+                <h2>Playful Features:</h2>
+                <ul>
+                    <li>Lightweight, durable wand handle</li>
+                    <li>Multi-textured attachments</li>
+                    <li>Jingling bells for audio stimulation</li>
+                    <li>Replaceable teaser ends</li>
+                    <li>Safe, pet-friendly materials</li>
+                    <li>Perfect for exercise and bonding</li>
+                </ul>
+            </div>
+            <a href="checkout.html" class="buy-button">Add to Cart</a>
+        </div>
+    </div>
+   <!-- Quality & Safety -->
+   <section class="bg-light py-5 quality-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 fade-in">
+          <h2 class="display-4 mb-4">Quality & Safety First</h2>
+          <p class="lead mb-4">All our products are crafted with premium, pet-safe materials and undergo rigorous testing to ensure the highest standards of quality and durability.</p>
+          <ul class="list-unstyled feature-list">
+            <li class="slide-in"><i class="bi bi-check-circle-fill text-success"></i> Pet-safe materials</li>
+            <li class="slide-in"><i class="bi bi-check-circle-fill text-success"></i> Durability tested</li>
+            <li class="slide-in"><i class="bi bi-check-circle-fill text-success"></i> Comfort focused</li>
+            <li class="slide-in"><i class="bi bi-check-circle-fill text-success"></i> Vet approved</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="quality-image-container bounce-in">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Happy cat with quality products" class="img-fluid rounded-circle shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .quality-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        overflow: hidden;
+      }
+      .quality-image-container {
+        padding: 20px;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: bounceIn 1s ease-out forwards;
+      }
+      .feature-list li {
+        padding: 15px;
+        font-size: 1.2rem;
+        margin: 10px 0;
+        transform: translateX(-20px);
+        opacity: 0;
+        animation: slideIn 0.5s ease-out forwards;
+        animation-delay: calc(var(--animation-order) * 0.1s);
+      }
+      .feature-list li:nth-child(1) { --animation-order: 1; }
+      .feature-list li:nth-child(2) { --animation-order: 2; }
+      .feature-list li:nth-child(3) { --animation-order: 3; }
+      .feature-list li:nth-child(4) { --animation-order: 4; }
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+      }
+      @keyframes bounceIn {
+        0% { transform: translateY(20px); opacity: 0; }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); opacity: 1; }
+      }
+      @keyframes slideIn {
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+    </style>
+  </section>
+  
+  <footer class="bg-dark text-light py-4 mga">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5> Mowga</h5>
+          <p>Premium cat accessories for your beloved feline friend.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="text-light">About Us</a></li>
+            <li><a href="privacy.html" class="text-light">Privacy Policy</a></li>
+            <li><a href="terms.html" class="text-light">Terms of Service</a></li>
+            <li><a href="contact.html" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2024  Mowga. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
